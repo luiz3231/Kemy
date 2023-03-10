@@ -1,4 +1,6 @@
-from urllib import request
+from urllib.request import Request
+
+
 def buscar_avatar(usuario):
     """Busca o avatar de um usuario no GitHub
     
@@ -6,8 +8,5 @@ def buscar_avatar(usuario):
     :return: str com o link do avatar
     """
     url = f'https://api.githun.com/users/{usuario}'
-    resp = request.get(url)
-    return resp.json()['avatar_url']
-if __name__ == '__main__':
-    print(buscar_avatar('luiz3231'))
+    Request
     
